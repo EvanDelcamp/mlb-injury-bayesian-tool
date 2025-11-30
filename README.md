@@ -139,9 +139,39 @@ This app is meant as a **teaching/demo tool**, not a full-blown injury model. It
 
 Install required packages in R:
 
-```r
 install.packages(c(
   "shiny",
   "rstanarm",
   "ggplot2"
 ))
+
+Note: rstanarm may take a while to install the first time and may require a working C++ toolchain (Rtools on Windows / Xcode command line tools on macOS).
+Running the App
+
+Clone the repo:
+```
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+Then, in R or RStudio:
+```r
+library(shiny)
+runApp("app.R")  # or click "Run App" in RStudio with app.R open
+```
+
+The app should open in your browser (or in the RStudio viewer).
+
+Limitations
+
+Extremely simplified model:
+
+One predictor (workload)
+
+Single-season binary outcome
+
+Ignores important covariates:
+
+Age, prior injury, velocity, mechanics, rest, etc.
+
+Intended for demonstration and intuition-building, not real-world decision-making.
