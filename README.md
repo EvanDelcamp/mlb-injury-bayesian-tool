@@ -14,7 +14,7 @@ The app was originally built as an optional activity for a Bayesian statistics c
 
 You can try the app here:
 
-👉 **[Live Shiny app](https://evan-delcamp.shinyapps.io/optional_activity_bayesian_tool/)**
+**[Live Shiny app](https://evan-delcamp.shinyapps.io/optional_activity_bayesian_tool/)**
 
 ---
 
@@ -57,7 +57,7 @@ Posterior inference is done via **MCMC** using `rstanarm::stan_glm` (NUTS/HMC).
 
 ---
 
-## What the App Lets You Do
+## What the App can do
 
 The app takes a **simple synthetic dataset** summarised into two workload groups:
 
@@ -114,9 +114,9 @@ After setting these values and clicking **“Update model”**, the app:
 
 ## Bayesian Concepts Demonstrated
 
-This app is meant as a **teaching/demo tool**, not a full-blown injury model. It illustrates:
+NOTE: App is meant as a **teaching/demo tool**, not a full injury model. It illustrates:
 
-- **Prior + likelihood → posterior**  
+- **Prior + likelihood -> posterior**  
   Priors on baseline injury and workload effect are combined with data via a Bernoulli–logistic likelihood.
 
 - **Uncertainty via full posterior distributions**  
